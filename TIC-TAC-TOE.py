@@ -15,7 +15,7 @@ titleLabel.grid(row=0, column=0)
 optionFrame = Frame(root, bg="grey")
 optionFrame.pack()
 
-frame2 = Frame(root, bg="yellow")
+frame2 = Frame(root, bg="light grey")
 frame2.pack()
 
 # Initialize the board and other variables

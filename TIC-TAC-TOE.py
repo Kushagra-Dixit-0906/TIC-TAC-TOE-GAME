@@ -9,7 +9,7 @@ root.resizable(0, 0)
 # Create the frames
 frame1 = Frame(root)
 frame1.pack()
-titleLabel = Label(frame1, text="Tic Tac Toe", font=("Algerian", 26), bg="cyan", width=16)
+titleLabel = Label(frame1, text="Tic Tac Toe", font=("Algerian", 26), bg= "#673ab7",fg = "white", width=16)
 titleLabel.grid(row=0, column=0)
 
 optionFrame = Frame(root, bg="grey")
@@ -139,12 +139,12 @@ multiPlayerButton.grid(row=0, column=1, sticky=NW)
 buttons = []
 for i in range(3):
     for j in range(3):
-        button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg="light grey", relief=RAISED, borderwidth=5)
+        button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg="light blue", relief=RAISED, borderwidth=5)
         button.grid(row=i, column=j)
         button.bind("<Button-1>", play)
         buttons.append(button)
 
-restartButton = Button(frame2, text="Restart Game", width=19, height=1, font=("Arial", 20), bg="Green", relief=RAISED, borderwidth=5, command=restartGame)
+restartButton = Button(frame2, text="Restart Game", width=19, height=1, font=("Arial", 20), bg="Teal", relief=RAISED, borderwidth=5, command=restartGame)
 restartButton.grid(row=4, column=0, columnspan=3)
 
 root.mainloop()
